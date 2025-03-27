@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>黑客攻击</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../main.js" defer></script>
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://myinstasecurity.com/"
+    />
+
+ 
+    <link rel="alternate" hreflang="fr" href="https://myinstasecurity.com/" />
+
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://myinstasecurity.com/en/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru"
+      href="https://myinstasecurity.com/ru/"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://myinstasecurity.com/es/"
+    />
+    <link
+      rel="alternate"
+      hreflang="it"
+      href="https://myinstasecurity.com/it/"
+    />
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://myinstasecurity.com/de/"
+    />
+    <link
+      rel="alternate"
+      hreflang="zh"
+      href="https://myinstasecurity.com/zh/"
+    />
+    <link
+      rel="alternate"
+      hreflang="pt"
+      href="https://myinstasecurity.com/pt/"
+    />
+    <link
+      rel="alternate"
+      hreflang="id"
+      href="https://myinstasecurity.com/id/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ja"
+      href="https://myinstasecurity.com/ja/"
+    />
+    <link
+      rel="alternate"
+      hreflang="da"
+      href="https://myinstasecurity.com/da/"
+    />
+    <link rel="icon" type="image/svg+xml" href="instafavicon.svg" />
+    <meta
+      name="description"
+      content="了解如何一步步黑客攻击 Instagram 账户，阅读我们的完整指南，发现所有的技巧。"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">My Insta Security</div>
+        <div class="language-selector">
+          <button class="language-btn">
+            <span class="current-lang">PT</span>
+            <span class="arrow">▼</span>
+          </button>
+          <ul class="language-dropdown">
+            <li>
+              <a href="/ru/index.html" data-lang="RU">Русский</a>
+            </li>
+            <li>
+              <a href="/en/index.html" data-lang="EN">English</a>
+            </li>
+            <li>
+              <a href="/es/index.html" data-lang="ES">Español</a>
+            </li>
+            <li>
+              <a href="/it/index.html" data-lang="IT">Italiano</a>
+            </li>
+            <li>
+              <a href="/de/index.html" data-lang="DE">Deutsch</a>
+            </li>
+            <li>
+              <a href="/index.html" data-lang="FR">Français</a>
+            </li>
+            <li>
+              <a href="/pt/index.html" data-lang="PT">Português</a>
+            </li>
+            <li>
+              <a href="/id/index.html" data-lang="ID">Indonésio</a>
+            </li>
+            <li>
+              <a href="/ja/index.html" data-lang="JA">日本語</a>
+            </li>
+            <li>
+              <a href="/da/index.html" data-lang="DA">Dansk</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>黑客攻击 Instagram 账户：终极指南</h1>
+            <p class="intro">
+              根据 StationX 的数据，85% 的 Instagram
+              用户曾至少一次成为黑客攻击的受害者，这使得 Instagram
+              成为最常被攻击的社交平台之一。在 2023 年，每个月有超过 36,222
+              个账户被攻破。
+            </p>
+            <div class="hero-cta">
+              <a href="#recovery-steps" class="cta-button"> 如何保护自己 </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="image-container">
+              <img src="../assets/hero-image.svg" alt="Hero image" />
+              <div class="stat-bubble stat-bubble-left">
+                <div class="stat-item">
+                  <span class="stat-wrapper">
+                    <span class="stat-highlight" id="stat1" data-value="85"
+                      >0</span
+                    >
+                    <span class="stat-unit">%</span>
+                  </span>
+                  <span class="stat-label">用户曾被黑客攻击</span>
+                </div>
+              </div>
+              <div class="stat-bubble stat-bubble-right">
+                <div class="stat-item">
+                  <span
+                    class="stat-highlight"
+                    id="stat2"
+                    data-value="36222"
+                    data-format="true"
+                    >0</span
+                  >
+                  <span class="stat-label">每月被攻击的账户数</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="procede-content">
+          <h1 class="procede-title">网络攻击过程</h1>
+          <div>
+            <ul class="procede-list">
+              <li onclick="showSection('attack')">攻击方式</li>
+              <li onclick="showSection('consequence')">后果</li>
+              <li onclick="showSection('signe')">警告信号</li>
+            </ul>
+          </div>
+
+          <div class="procede-attack" style="display: none">
+            <div class="card">
+              <img src="../assets/exploitation.svg" alt="描述图片" />
+              <div class="card-footer">
+                利用您在其他地方重复使用的密码进行攻击。
+              </div>
+            </div>
+            <div class="card">
+              <img src="../assets/Phishing account-amigo.svg" alt="描述图片" />
+              <div class="card-footer">
+                使用钓鱼技术骗您点击欺诈链接或下载恶意软件。
+              </div>
+            </div>
+          </div>
+
+          <div class="procede-consequence" style="display: none">
+            <div class="card">
+              <img src="../assets/Personal data-amigo.svg" alt="描述图片" />
+              <div class="card-footer">偷窃您的个人信息。</div>
+            </div>
+            <div class="card">
+              <img src="../assets/Cyber attack-bro.svg" alt="描述图片" />
+              <div class="card-footer">假冒您进行诈骗。</div>
+            </div>
+            <div class="card">
+              <img src="../assets/exploitation.svg" alt="描述图片" />
+              <div class="card-footer">访问与您关联的其他账户。</div>
+            </div>
+          </div>
+
+          <div class="procede-signe" style="display: none">
+            <div class="card">
+              <img
+                src="../assets/401 Error Unauthorized-pana.svg"
+                alt="描述图片"
+              />
+              <div class="card-footer">
+                您无法登录，并且收到一条信息显示您的凭证错误。
+              </div>
+            </div>
+            <div class="card">
+              <img src="../assets/Hidden mining-rafiki.svg" alt="描述图片" />
+              <div class="card-footer">
+                您的账户出现可疑活动（发布、故事或短视频），您收到来自未知设备或位置的访问通知。
+              </div>
+            </div>
+            <div class="card">
+              <img src="../assets/Mention-amigo.svg" alt="描述图片" />
+              <div class="card-footer">
+                您的粉丝收到来自您账户的可疑消息，通常包含欺诈性链接。
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recovery-steps" id="recovery-steps">
+        <div class="solution-content">
+          <div class="solution-text">
+            <h1 class="solution-title">可能的解决方案</h1>
+          </div>
+          <div>
+            <ul class="solution-list">
+              <div class="solution-card">
+                <span class="solution-numero">01</span>
+                <li class="solution-item" style="text-align: start">
+                  如果您仍然能够访问您的账户，请尽快更改密码。
+                </li>
+              </div>
+
+              <figure class="solution-image">
+                <img
+                  src="../assets/Reset password-amigo.svg"
+                  alt="解决方案插图"
+                />
+              </figure>
+            </ul>
+
+            <ul class="solution-list">
+              <figure class="solution-images">
+                <img
+                  src="../assets/Two factor authentication-amico.svg"
+                  alt="解决方案插图"
+                />
+              </figure>
+              <div class="solution-card">
+                <span class="solution-numero">02</span>
+                <li class="solution-item" style="text-align: start">
+                  启用双因素认证 (2FA) 来更好地保护您的账户。
+                </li>
+              </div>
+            </ul>
+
+            <ul class="solution-list">
+              <div class="solution-card">
+                <span class="solution-numero">03</span>
+                <li class="solution-item" style="text-align: start">
+                  检查您的电子邮件：如果您收到一封关于更改电子邮件地址的安全信息，请使用“保护我的账户”链接。
+                </li>
+              </div>
+
+              <figure class="solution-image">
+                <img src="../assets/Secure data-pana.svg" alt="解决方案插图" />
+              </figure>
+            </ul>
+            <ul class="solution-list">
+              <figure class="solution-images">
+                <img src="../assets/Enter OTP-amico.svg" alt="解决方案插图" />
+              </figure>
+              <div class="solution-card">
+                <span class="solution-numero">04</span>
+                <li class="solution-item">
+                  请求 Instagram 的访问链接或安全码。
+                </li>
+              </div>
+            </ul>
+            <ul class="solution-list">
+              <div class="solution-card">
+                <span class="solution-numero">05</span>
+                <li class="solution-item">
+                  如果这些方法失败，请联系 Instagram
+                  支持，并通过视频验证您的身份。
+                </li>
+              </div>
+
+              <figure class="solution-image">
+                <img src="../assets/Call center-pana.svg" alt="解决方案插图" />
+              </figure>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="conclusion">
+        <p class="conclusion-text">
+          成为 Instagram
+          黑客攻击的受害者从来都不好，但幸运的是，您可以通过简单的解决方案找回账户，并在未来更好地保护它。保持警惕，避免再次成为攻击目标。
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-text">© 2025 Instagram 安全指南</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rediseño</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../main.js" defer></script>
+    <!-- Baliza hreflang para el idioma predeterminado (FR) -->
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://myinstasecurity.com/"
+    />
+
+    <!-- Baliza hreflang para el idioma FR -->
+    <link rel="alternate" hreflang="fr" href="https://myinstasecurity.com/" />
+
+    <!-- Otros idiomas -->
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://myinstasecurity.com/en/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru"
+      href="https://myinstasecurity.com/ru/"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://myinstasecurity.com/es/"
+    />
+    <link
+      rel="alternate"
+      hreflang="it"
+      href="https://myinstasecurity.com/it/"
+    />
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://myinstasecurity.com/de/"
+    />
+    <link
+      rel="alternate"
+      hreflang="zh"
+      href="https://myinstasecurity.com/zh/"
+    />
+    <link
+      rel="alternate"
+      hreflang="pt"
+      href="https://myinstasecurity.com/pt/"
+    />
+    <link
+      rel="alternate"
+      hreflang="id"
+      href="https://myinstasecurity.com/id/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ja"
+      href="https://myinstasecurity.com/ja/"
+    />
+    <link
+      rel="alternate"
+      hreflang="da"
+      href="https://myinstasecurity.com/da/"
+    />
+    <link rel="icon" type="image/svg+xml" href="instafavicon.svg" />
+    <meta
+      name="description"
+      content="Descubre cómo hackear una cuenta de Instagram paso a paso con nuestra guía completa. Aprende todos los trucos para tener éxito."
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">My Insta Security</div>
+        <div class="language-selector">
+          <button class="language-btn">
+            <span class="current-lang">ES</span>
+            <span class="arrow">▼</span>
+          </button>
+          <ul class="language-dropdown">
+            <li>
+              <a href="/ru/index.html" data-lang="RU">Русский</a>
+            </li>
+            <li>
+              <a href="/en/index.html" data-lang="EN">English</a>
+            </li>
+            <li>
+              <a href="/index.html" data-lang="FR">Français</a>
+            </li>
+            <li>
+              <a href="/it/index.html" data-lang="IT">Italiano</a>
+            </li>
+            <li>
+              <a href="/de/index.html" data-lang="DE">Deutsch</a>
+            </li>
+            <li>
+              <a href="/zh/index.html" data-lang="ZH">中文</a>
+            </li>
+            <li>
+              <a href="/pt/index.html" data-lang="PT">Português</a>
+            </li>
+            <li>
+              <a href="/id/index.html" data-lang="ID">Indonesia</a>
+            </li>
+            <li>
+              <a href="/ja/index.html" data-lang="JA">日本語</a>
+            </li>
+            <li>
+              <a href="/da/index.html" data-lang="DA">Dansk</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Hackear una cuenta de Instagram: la guía definitiva</h1>
+            <p class="intro">
+              Según StationX, el 85 % de los usuarios de Instagram han sido
+              víctimas de un hackeo al menos una vez, convirtiendo a Instagram
+              en una de las plataformas sociales más atacadas. En 2023, más de
+              36,222 cuentas fueron comprometidas cada mes.
+            </p>
+            <div class="hero-cta">
+              <a href="#recovery-steps" class="cta-button"> Cómo protegerse </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="image-container">
+              <img src="../assets/hero-image.svg" alt="Hero Image" />
+
+              <!-- Burbujas de estadísticas izquierda -->
+              <div class="stat-bubble stat-bubble-left">
+                <div class="stat-item">
+                  <span class="stat-wrapper">
+                    <span class="stat-highlight" id="stat1" data-value="85"
+                      >0</span
+                    >
+                    <span class="stat-unit">%</span>
+                  </span>
+                  <span class="stat-label"
+                    >de los usuarios han sido hackeados</span
+                  >
+                </div>
+              </div>
+
+              <!-- Burbujas de estadísticas derecha -->
+              <div class="stat-bubble stat-bubble-right">
+                <div class="stat-item">
+                  <span
+                    class="stat-highlight"
+                    id="stat2"
+                    data-value="36222"
+                    data-format="true"
+                    >0</span
+                  >
+                  <span class="stat-label">cuentas comprometidas por mes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="procede-content">
+          <h1 class="procede-title">Procedimientos de un Ciberataque</h1>
+          <div>
+            <ul class="procede-list">
+              <li onclick="showSection('attack')">Ataques</li>
+              <li onclick="showSection('consequence')">Consecuencias</li>
+              <li onclick="showSection('signe')">Señales reveladoras</li>
+            </ul>
+          </div>
+
+          <!-- Sección Ataques -->
+          <div class="procede-attack" style="display: none">
+            <div class="card">
+              <img
+                src="../assets/exploitation.svg"
+                alt="Descripción de la imagen"
+              />
+              <div class="card-footer">
+                Explotando otra cuenta vulnerable donde reutilizaste la misma
+                contraseña.
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="../assets/Phishing account-amico.svg"
+                alt="Descripción de la imagen"
+              />
+              <div class="card-footer">
+                Usando técnicas de phishing para incitarte a hacer clic en
+                enlaces fraudulentos o descargar software malicioso.
+              </div>
+            </div>
+          </div>
+
+          <!-- Sección Consecuencias -->
+          <div class="procede-consequence" style="display: none">
+            <div class="card">
+              <img
+                src="../assets/Personal data-amico.svg"
+                alt="Descripción de la imagen"
+              />
+              <div class="card-footer">Robar tus datos personales.</div>
+            </div>
+            <div class="card">
+              <img
+                src="../assets/Cyber attack-bro.svg"
+                alt="Descripción de la imagen"
+              />
+              <div class="card-footer">
+                Estafar a tus seguidores haciéndose pasar por ti.
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="../assets/exploitation.svg"
+                alt="Descripción de la imagen"
+              />
+              <div class="card-footer">Acceder a otras cuentas vinculadas.</div>
+            </div>
+          </div>
+
+          <!-- Sección Señales reveladoras -->
+          <div class="procede-signe" style="display: none">
+            <div class="card">
+              <img
+                src="../assets/401 Error Unauthorized-pana.svg"
+                alt="Descripción de la imagen"
+              />
+              <div class="card-footer">
+                No puedes acceder y aparece un mensaje indicando que tus
+                credenciales son incorrectas.
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="../assets/Hidden mining-rafiki.svg"
+                alt="Descripción de la imagen"
+              />
+              <div class="card-footer">
+                Aparece una actividad inusual en tu cuenta (publicaciones,
+                historias o reels que no creaste). Recibes notificaciones de
+                inicio de sesión desde dispositivos o lugares desconocidos.
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="../assets/Mention-amico.svg"
+                alt="Descripción de la imagen"
+              />
+              <div class="card-footer">
+                Tus seguidores reciben mensajes extraños de tu cuenta, a menudo
+                con enlaces fraudulentos.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recovery-steps" id="recovery-steps">
+        <div class="solution-content">
+          <div class="solution-text">
+            <h1 class="solution-title">Soluciones posibles</h1>
+          </div>
+          <div>
+            <ul class="solution-list">
+              <div class="solution-card">
+                <span class="solution-numero">01</span>
+                <li class="solution-item" style="text-align: start">
+                  Si aún tienes acceso a tu cuenta, cambia tu contraseña sin
+                  demora.
+                </li>
+              </div>
+
+              <figure class="solution-image">
+                <img
+                  src="../assets/Reset password-amico.svg"
+                  alt="Ilustración solución"
+                />
+              </figure>
+            </ul>
+
+            <ul class="solution-list">
+              <figure class="solution-images">
+                <img
+                  src="../assets/Two factor authentication-amico.svg"
+                  alt="Ilustración solución"
+                />
+              </figure>
+              <div class="solution-card">
+                <span class="solution-numero">02</span>
+                <li class="solution-item" style="text-align: start">
+                  Activa la autenticación de dos factores (2FA) para asegurar
+                  aún más tu cuenta.
+                </li>
+              </div>
+            </ul>
+
+            <ul class="solution-list">
+              <div class="solution-card">
+                <span class="solution-numero">03</span>
+                <li class="solution-item" style="text-align: start">
+                  Revisa tu correo electrónico: si recibiste un mensaje de
+                  seguridad indicando un cambio de dirección de correo, usa el
+                  enlace "Asegurar mi cuenta".
+                </li>
+              </div>
+
+              <figure class="solution-image">
+                <img
+                  src="../assets/Secure data-pana.svg"
+                  alt="Ilustración solución"
+                />
+              </figure>
+            </ul>
+            <ul class="solution-list">
+              <figure class="solution-images">
+                <img
+                  src="../assets/Enter OTP-amico.svg"
+                  alt="Ilustración solución"
+                />
+              </figure>
+              <div class="solution-card">
+                <span class="solution-numero">04</span>
+                <li class="solution-item">
+                  Solicita un enlace de acceso o un código de seguridad a
+                  Instagram.
+                </li>
+              </div>
+            </ul>
+            <ul class="solution-list">
+              <div class="solution-card">
+                <span class="solution-numero">05</span>
+                <li class="solution-item">
+                  Si estas opciones fallan, contacta con el soporte de Instagram
+                  y verifica tu identidad enviando un video de ti mismo.
+                </li>
+              </div>
+
+              <figure class="solution-image">
+                <img
+                  src="../assets/Call center-pana.svg"
+                  alt="Ilustración solución"
+                />
+              </figure>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="conclusion">
+        <p class="conclusion-text">
+          Ser víctima de un hackeo en Instagram nunca es agradable, pero
+          afortunadamente existen soluciones simples para recuperar tu cuenta y
+          protegerla en el futuro. Sé proactivo y vigilante para evitar ser
+          nuevamente el objetivo de los hackers.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-text">© 2025 Guía de Seguridad en Instagram</p>
+    </footer>
+  </body>
+</html>

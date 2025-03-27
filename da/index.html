@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redesign</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../main.js" defer></script>
+    <!-- Hreflang tag for standard sprog (FR) -->
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://myinstasecurity.com/"
+    />
+
+    <!-- Hreflang tag for sprog FR -->
+    <link rel="alternate" hreflang="fr" href="https://myinstasecurity.com/" />
+
+    <!-- Andre sprog -->
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://myinstasecurity.com/en/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru"
+      href="https://myinstasecurity.com/ru/"
+    />
+    <link
+      rel="alternate"
+      hreflang="es"
+      href="https://myinstasecurity.com/es/"
+    />
+    <link
+      rel="alternate"
+      hreflang="it"
+      href="https://myinstasecurity.com/it/"
+    />
+    <link
+      rel="alternate"
+      hreflang="de"
+      href="https://myinstasecurity.com/de/"
+    />
+    <link
+      rel="alternate"
+      hreflang="zh"
+      href="https://myinstasecurity.com/zh/"
+    />
+    <link
+      rel="alternate"
+      hreflang="pt"
+      href="https://myinstasecurity.com/pt/"
+    />
+    <link
+      rel="alternate"
+      hreflang="id"
+      href="https://myinstasecurity.com/id/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ja"
+      href="https://myinstasecurity.com/ja/"
+    />
+    <link
+      rel="alternate"
+      hreflang="da"
+      href="https://myinstasecurity.com/da/"
+    />
+    <link rel="icon" type="image/svg+xml" href="instafavicon.svg" />
+    <meta
+      name="description"
+      content="Lær hvordan man hacker en Instagram-konto trin for trin med vores komplette guide. Få alle tipsene til at lykkes."
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">My Insta Security</div>
+        <div class="language-selector">
+          <button class="language-btn">
+            <span class="current-lang">FR</span>
+            <span class="arrow">▼</span>
+          </button>
+          <ul class="language-dropdown">
+            <li>
+              <a href="/ru/index.html" data-lang="RU">Русский</a>
+            </li>
+            <li>
+              <a href="/en/index.html" data-lang="EN">English</a>
+            </li>
+            <li>
+              <a href="/es/index.html" data-lang="ES">Español</a>
+            </li>
+            <li>
+              <a href="/it/index.html" data-lang="IT">Italiano</a>
+            </li>
+            <li>
+              <a href="/de/index.html" data-lang="DE">Deutsch</a>
+            </li>
+            <li>
+              <a href="/zh/index.html" data-lang="ZH">中文</a>
+            </li>
+            <li>
+              <a href="/pt/index.html" data-lang="PT">Português</a>
+            </li>
+            <li>
+              <a href="/id/index.html" data-lang="ID">Indonesia</a>
+            </li>
+            <li>
+              <a href="/ja/index.html" data-lang="JA">日本語</a>
+            </li>
+            <li>
+              <a href="/index.html" data-lang="FR">Français</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Hack en Instagram-konto: Den ultimative guide</h1>
+            <p class="intro">
+              Ifølge StationX er 85 % af Instagram-brugerne blevet hacket mindst
+              én gang, hvilket gør Instagram til en af de mest målrettede
+              sociale medieplatforme. I 2023 blev mere end 36.222 konti
+              kompromitteret hver måned.
+            </p>
+            <div class="hero-cta">
+              <a href="#recovery-steps" class="cta-button">
+                Hvordan man beskytter sig
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="image-container">
+              <img src="../assets/hero-image.svg" alt="Hero Image" />
+
+              <!-- Venstre statistisk boble -->
+              <div class="stat-bubble stat-bubble-left">
+                <div class="stat-item">
+                  <span class="stat-wrapper">
+                    <span class="stat-highlight" id="stat1" data-value="85"
+                      >0</span
+                    >
+                    <span class="stat-unit">%</span>
+                  </span>
+                  <span class="stat-label">af brugerne er blevet hacket</span>
+                </div>
+              </div>
+
+              <!-- Højre statistisk boble -->
+              <div class="stat-bubble stat-bubble-right">
+                <div class="stat-item">
+                  <span
+                    class="stat-highlight"
+                    id="stat2"
+                    data-value="36222"
+                    data-format="true"
+                    >0</span
+                  >
+                  <span class="stat-label"
+                    >kompromitterede konti pr. måned</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="procede-content">
+          <h1 class="procede-title">Processen i en cyberangreb</h1>
+          <div>
+            <ul class="procede-list">
+              <li onclick="showSection('attack')">Angreb</li>
+              <li onclick="showSection('consequence')">Konsekvenser</li>
+              <li onclick="showSection('signe')">Advarselstegn</li>
+            </ul>
+          </div>
+
+          <!-- Angrebssektion -->
+          <div class="procede-attack" style="display: none">
+            <div class="card">
+              <img src="../assets/exploitation.svg" alt="Image description" />
+              <div class="card-footer">
+                Ved at udnytte en anden sårbar konto, hvor du har genbrugt den
+                samme adgangskode.
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="../assets/Phishing account-amico.svg"
+                alt="Image description"
+              />
+              <div class="card-footer">
+                Ved at bruge phishing-teknikker for at få dig til at klikke på
+                falske links eller downloade malware.
+              </div>
+            </div>
+          </div>
+
+          <!-- Konsekvens-sektion -->
+          <div class="procede-consequence" style="display: none">
+            <div class="card">
+              <img
+                src="../assets/Personal data-amico.svg"
+                alt="Image description"
+              />
+              <div class="card-footer">Stjæle dine personlige oplysninger.</div>
+            </div>
+            <div class="card">
+              <img
+                src="../assets/Cyber attack-bro.svg"
+                alt="Image description"
+              />
+              <div class="card-footer">
+                Bedrage dine følgere ved at udgive sig for at være dig
+              </div>
+            </div>
+            <div class="card">
+              <img src="../assets/exploitation.svg" alt="Image description" />
+              <div class="card-footer">
+                Få adgang til andre relaterede konti.
+              </div>
+            </div>
+          </div>
+
+          <!-- Advarselstegn-sektion -->
+          <div class="procede-signe" style="display: none">
+            <div class="card">
+              <img
+                src="../assets/401 Error Unauthorized-pana.svg"
+                alt="Image description"
+              />
+              <div class="card-footer">
+                Du kan ikke logge ind, og en meddelelse siger, at dine
+                legitimationsoplysninger er forkerte.
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="../assets/Hidden mining-rafiki.svg"
+                alt="Image description"
+              />
+              <div class="card-footer">
+                Usædvanlig aktivitet vises på din konto (indlæg, historier eller
+                reels, du ikke har oprettet). Du modtager login-beskeder fra
+                ukendte enheder eller steder.
+              </div>
+            </div>
+            <div class="card">
+              <img src="../assets/Mention-amico.svg" alt="Image description" />
+              <div class="card-footer">
+                Dine følgere modtager mærkelige meddelelser fra din konto, ofte
+                med falske links.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recovery-steps" id="recovery-steps">
+        <div class="solution-content">
+          <div class="solution-text">
+            <h1 class="solution-title">Mulige løsninger</h1>
+          </div>
+          <div>
+            <ul class="solution-list">
+              <div class="solution-card">
+                <span class="solution-numero">01</span>
+                <li class="solution-item" style="text-align: start">
+                  Hvis du stadig har adgang til din konto, skal du ændre din
+                  adgangskode uden at vente.
+                </li>
+              </div>
+
+              <figure class="solution-image">
+                <img
+                  src="../assets/Reset password-amico.svg"
+                  alt="Illustration solution"
+                />
+              </figure>
+            </ul>
+
+            <ul class="solution-list">
+              <figure class="solution-images">
+                <img
+                  src="../assets/Two factor authentication-amico.svg"
+                  alt="Illustration solution"
+                />
+              </figure>
+              <div class="solution-card">
+                <span class="solution-numero">02</span>
+                <li class="solution-item" style="text-align: start">
+                  Aktiver to-faktor-autentifikation (2FA) for at sikre din konto
+                  yderligere.
+                </li>
+              </div>
+            </ul>
+
+            <ul class="solution-list">
+              <div class="solution-card">
+                <span class="solution-numero">03</span>
+                <li class="solution-item" style="text-align: start">
+                  Tjek dine e-mails: Hvis du har modtaget en
+                  sikkerhedsmeddelelse, der indikerer ændring af e-mailadresse,
+                  skal du bruge linket "Sikre min konto".
+                </li>
+              </div>
+
+              <figure class="solution-image">
+                <img
+                  src="../assets/Secure data-pana.svg"
+                  alt="Illustration solution"
+                />
+              </figure>
+            </ul>
+            <ul class="solution-list">
+              <figure class="solution-images">
+                <img
+                  src="../assets/Enter OTP-amico.svg"
+                  alt="Illustration solution"
+                />
+              </figure>
+              <div class="solution-card">
+                <span class="solution-numero">04</span>
+                <li class="solution-item">
+                  Anmod om en login-link eller en sikkerhedskode fra Instagram.
+                </li>
+              </div>
+            </ul>
+            <ul class="solution-list">
+              <div class="solution-card">
+                <span class="solution-numero">05</span>
+                <li class="solution-item">
+                  Hvis disse muligheder fejler, skal du kontakte
+                  Instagram-supporten og verificere din identitet ved at sende
+                  en video af dig selv.
+                </li>
+              </div>
+
+              <figure class="solution-image">
+                <img
+                  src="../assets/Call center-pana.svg"
+                  alt="Illustration solution"
+                />
+              </figure>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="conclusion">
+        <p class="conclusion-text">
+          At blive offer for et hack på Instagram er aldrig rart, men heldigvis
+          findes der enkle løsninger til at få din konto tilbage og sikre den
+          fremover. Vær proaktiv og opmærksom for at undgå at blive et mål for
+          hackere igen.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-text">© 2025 Instagram Sikkerhedsvejledning</p>
+    </footer>
+  </body>
+</html>
