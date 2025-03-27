@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Language selector functionality
   const languageBtn = document.querySelector(".language-btn");
   const languageDropdown = document.querySelector(".language-dropdown");
   const currentLang = document.querySelector(".current-lang");
 
+  // Update current language based on URL
   const updateCurrentLanguage = () => {
     const path = window.location.pathname;
     const lang = path.split("/")[1] || "fr";
@@ -18,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let isOpen = false;
 
+  // Toggle dropdown on button click
   languageBtn.addEventListener("click", (e) => {
     e.stopPropagation();
     if (!isOpen) {
@@ -26,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Close dropdown when clicking outside
   document.addEventListener("click", (e) => {
     if (
       !languageBtn.contains(e.target) &&
@@ -36,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Close dropdown when clicking on a language link
   languageDropdown.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
       languageDropdown.style.display = "none";
@@ -43,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -56,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Add animation to sections on scroll
   const sections = document.querySelectorAll("section");
   const observer = new IntersectionObserver(
     (entries) => {
@@ -78,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section);
   });
 
+  // Add parallax effect to hero section
   const heroVisual = document.querySelector(".hero-visual");
   window.addEventListener("scroll", () => {
     const scrolled = window.pageYOffset;
@@ -87,12 +95,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Fonction pour détecter la langue de la page
 const getPageLanguage = () => {
-  return document.documentElement.lang || "fr";
+  return document.documentElement.lang || "fr"; // Défaut : français
 };
 
+// Texte et liens en fonction de la langue
 const getPopupText = (lang) => {
-  const siteSource = "myinstasecurity.com";
+  const siteSource = "myinstasecurity.com"; // Source toujours égale au site
 
   const affiliateLinks = {
     fr: `https://track.mspy.click/aff_c?offer_id=70&aff_id=13867&source=${siteSource}&aff_sub=insta_FR`,
@@ -236,13 +246,17 @@ const getPopupText = (lang) => {
   return translations[lang] || translations["x-default"];
 };
 
-const lang = "fr";
+// Exemple d'appel de la fonction
+const lang = "fr"; // Remplacer par la langue de l'utilisateur
 const popupContent = getPopupText(lang);
+console.log(popupContent); // Affiche le texte et le lien de l'offre pour la langue sélectionnée
 
+// Vérifier si le user agent est Googlebot
 const isGoogleBot = () => {
   return /Googlebot/i.test(navigator.userAgent);
 };
 
+// Création de la popup
 const createPopup = () => {
   const lang = getPageLanguage();
   const text = getPopupText(lang);
@@ -284,10 +298,10 @@ const createPopup = () => {
   });
 };
 
+// Afficher la popup après un délai si ce n'est pas Googlebot
 if (!isGoogleBot()) {
   setTimeout(createPopup, 2000);
 }
-
 document.addEventListener("DOMContentLoaded", () => {
   function animateCounter(element, start, end, duration, format = false) {
     let startTime = null;
