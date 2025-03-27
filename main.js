@@ -92,7 +92,7 @@ const getPageLanguage = () => {
 };
 
 const getPopupText = (lang) => {
-  const siteSource = "index.html";
+  const siteSource = "myinstasecurity.com";
 
   const affiliateLinks = {
     fr: `https://track.mspy.click/aff_c?offer_id=70&aff_id=13867&source=${siteSource}&aff_sub=insta_FR`,
